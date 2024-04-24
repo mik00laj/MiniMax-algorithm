@@ -5,6 +5,17 @@ The game involves two players taking turns selecting numbers from an n-element v
 
 For example n = 4, consider the vector [2, 0, 3, 1]. The optimal gameplay for the starting player would be to select [2, 3], leaving the second player with [0, 1] or [1, 0].
 
+Implemented are three different players against whom the MinMax player plays:
+
+Random Agent:
+The Random Agent makes decisions randomly without considering any specific strategy. It simply chooses a move randomly from the available options. This agent can be unpredictable and may not always make optimal decisions. However, it can sometimes introduce an element of surprise into the game, which might be advantageous in certain situations.
+
+Greedy Agent:
+The Greedy Agent follows a simple strategy of always choosing the move that maximizes its immediate gain without considering the long-term consequences. It typically selects the option that appears most favorable at each step without considering future moves or opponent strategies. While this approach can lead to quick gains in the short term, it may not always result in the best overall outcome.
+
+Ninja Agent:
+The Ninja Agent is a more sophisticated player that employs a combination of defensive and opportunistic strategies. It evaluates potential moves based on their immediate benefits as well as their impact on future gameplay. The Ninja Agent aims to minimize risks while capitalizing on opportunities, often adopting a more adaptive and strategic approach compared to the Random and Greedy Agents. This agent is more likely to anticipate opponent moves and adjust its strategy accordingly, making it a formidable opponent in many scenarios.
+
 # Unit Tests
 test.py
 Unit tests have been conducted to verify whether the algorithm has been implemented correctly.
