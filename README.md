@@ -17,10 +17,10 @@ The algorithm passed all tests successfully.
 ![image](https://github.com/mik00laj/MiniMax-algorithm/assets/108618874/f316c2b7-6178-4517-9bde-a8c7fa0dc1e8)
 
 # Results
-Głębokość - Depth
-Średni czas - Mean time
-Średnia suma punktów - Mean sum of points
-Odchylenie standardowe - Standard deviation
+- Głębokość - Depth
+- Średni czas - Mean time
+- Średnia suma punktów - Mean sum of points
+- Odchylenie standardowe - Standard deviation
 
 Depth: Indicates how far the algorithm goes in analyzing the game tree.
 Mean time: Measures the dispersion of data around the average score.
@@ -29,12 +29,17 @@ Standard deviation: The average time it takes for the algorithm to make a move i
 
 1) MinMaxAgent vs RandomAgent
 ![image](https://github.com/mik00laj/MiniMax-algorithm/assets/108618874/8a7624a2-01b3-46eb-9700-119ac7a0f012)
-2) MinMaxAgent vs GreedyAgent
+
+3) MinMaxAgent vs GreedyAgent
 ![image](https://github.com/mik00laj/MiniMax-algorithm/assets/108618874/4692f472-5b4d-46fa-b30e-8e62395b8f37)
-3) MinMaxAgent vs NinjaAgent
+
+5) MinMaxAgent vs NinjaAgent
 ![image](https://github.com/mik00laj/MiniMax-algorithm/assets/108618874/8b446fe4-dba9-42a8-acc7-7223b478983f)
-4) MinMaxAgent vs MinMaxAgent(15)
+
+7) MinMaxAgent vs MinMaxAgent(15)
 ![image](https://github.com/mik00laj/MiniMax-algorithm/assets/108618874/60d0f07f-3eb4-475a-aec2-bb5f5802ef2f)
+
+Depth: The depth of the state tree, which is a parameter of the Minimax algorithm, has a significant impact on the results obtained by the agent in various situations. With increasing depth of the tree, i.e., the number of levels at which the algorithm considers possible moves, the agent can make more thoughtful decisions, potentially leading to better game results. However, the impact of the tree depth is not straightforward and may depend on many factors, such as the opponent's strategy, the complexity of the game, and even randomness or random elements in the game.
 
 Mean time: The game execution time may also depend on the opponent's strategy. If the opponent makes quick decisions or has lower computational complexity, the game execution time may be shorter. On the other hand, more advanced opponent strategies may require longer computation time by the MinMaxAgent.
 
@@ -44,20 +49,28 @@ Standard Deviation: The stability of MinMaxAgent's results may also depend on th
 # Histograms
 1) Test for tree depth 2 MinMaxAgent vs RandomAgent
 ![image](https://github.com/mik00laj/MiniMax-algorithm/assets/108618874/685eeec0-c5e3-4f92-b2e1-6b9ad077d06c)
-2) Test dla głębokości drzewa 15 MinMaxAgent vs RandomAgent
+
+3) Test for tree depth 15 MinMaxAgent vs RandomAgent
 ![image](https://github.com/mik00laj/MiniMax-algorithm/assets/108618874/9fbf9a5c-415a-4d73-af61-78f83455c804)
-3) Test for tree depth 2 MinMaxAgent vs GreedyAgent
+
+5) Test for tree depth 2 MinMaxAgent vs GreedyAgent
 ![image](https://github.com/mik00laj/MiniMax-algorithm/assets/108618874/83e11047-e27f-439e-a5f9-bb6feb10f4a2)
-4) Test for tree deptha 15 MinMaxAgent vs GreedyAgent
+
+7) Test for tree deptha 15 MinMaxAgent vs GreedyAgent
 ![image](https://github.com/mik00laj/MiniMax-algorithm/assets/108618874/f8ce0e8e-6867-4712-b873-616fb848d648)
-5) Test for tree depth 2 MinMaxAgent vs NinjaAgent
+
+9) Test for tree depth 2 MinMaxAgent vs NinjaAgent
 ![image](https://github.com/mik00laj/MiniMax-algorithm/assets/108618874/5350a2c5-357b-4440-88eb-568066bff2a9)
-6) Test for tree depth 15 MinMaxAgent vs NinjaAgent
+
+11) Test for tree depth 15 MinMaxAgent vs NinjaAgent
 ![image](https://github.com/mik00laj/MiniMax-algorithm/assets/108618874/0ae6d457-a44d-46ef-8407-49344830044e)
-7) Test for tree depth 2 MinMaxAgent vs MinMaxAgent(15)
+
+13) Test for tree depth 2 MinMaxAgent vs MinMaxAgent(15)
 ![image](https://github.com/mik00laj/MiniMax-algorithm/assets/108618874/c25d7285-9d90-49ef-b964-e3dfb08f45a4)
-8) Test for tree depth 15 MinMaxAgent vs MinMaxAgent(15)
+
+15) Test for tree depth 15 MinMaxAgent vs MinMaxAgent(15)
 ![image](https://github.com/mik00laj/MiniMax-algorithm/assets/108618874/1fa2811b-84df-4caf-9c0c-da1c387b249f)
+
 
 The distribution of point sums obtained by the MinMaxAgent for tree depths 2 and 15 can be approximated as a normal distribution, specifically a binomial distribution, as the random variable is discrete rather than continuous. For both tree depths, the majority of results cluster around the mean value, and deviations from this value become increasingly rare, which aligns with the characteristics of a distribution approaching normality.
 
